@@ -7,7 +7,7 @@ const PassChange = () => {
     const [password, setPassword] = useState('');
     const [confirmpassword, setConfirmPassword] = useState('');
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
+    const [error] = useState(false);
     const navigate = useNavigate();
    const handleInput = (e) => {
        

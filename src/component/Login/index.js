@@ -15,12 +15,12 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
-    const [_user, setUser] = useContext(Context);
+    const [ user, setUser] = useContext(Context);
     const navigate = useNavigate();
 
-const handleResponse = (response) => {
+useEffect(() => {
+    const handleResponse = (response) => {
     var userObject = jwt_decode(response.credential);
-    console.log(userObject);
     setUser(userObject);
     localStorage.setItem('userGoogle', JSON.stringify(userObject));
     navigate('/account');
@@ -31,19 +31,19 @@ const handleResponse = (response) => {
             },
         }
         setLoading(true);
-        const {data} = axios.post(
-            "https://champagne-jay-veil.cyclic.app/api/users/googlelogin",
+        axios.post(
+            "https://champagne-jay-veil.cyclic.app/googlelogin",
             {
                 username:userObject.given_name,
                 email:userObject.email,
                 
             }, config);
-           
+         
         }catch (error) {
                 setError(error.response.data.message);
 }
 }
-    useEffect(() => {
+    
         /*global google*/
         google.accounts.id.initialize({
             client_id: '798083548947-ul7hvi9vhu9q9hcoi6n2c6g4ksupqsh0.apps.googleusercontent.com',
@@ -54,10 +54,9 @@ const handleResponse = (response) => {
             document.getElementById('signInDiv'),
             {theme: "outline", size: "large"}
         )
-
-    }, [])
-
-    const handleSubmit = async (e) => {
+},[navigate,setUser]);
+   
+const handleSubmit = async (e) => {
         e.preventDefault();
         
     try {
@@ -68,7 +67,7 @@ const handleResponse = (response) => {
         }
         setLoading(true);
         const {data} = await axios.post(
-            "https://champagne-jay-veil.cyclic.app/api/users",
+            "https://champagne-jay-veil.cyclic.app/api/users/login",
             {
                 username,
                 
@@ -97,7 +96,7 @@ const handleResponse = (response) => {
     <Content className='grid'>
         <div>
        <div ><br/>
-       <div id = 'signInDiv'></div> 
+ {!user &&    <div id = 'signInDiv'></div> }
         </div>
         <div >
     <h2 className='center'>OR</h2>

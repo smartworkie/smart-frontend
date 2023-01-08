@@ -8,7 +8,7 @@ const Reset = () => {
     const [newPass, setNewPass] = useState('');
     const [confirmnewPass, setConfirmnewPass] = useState('');
     const [loading, setLoading] =useState(false);
-    const [message, setMessage] = useState(false);
+    const [setMessage] = useState(false);
     const [message1, setMessage1] = useState(false);
     const [error, setError] = useState(false);
     const navigate = useNavigate();
