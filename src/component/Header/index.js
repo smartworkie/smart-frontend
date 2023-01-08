@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Wrapper, Content} from './header.styles'
 import {Link, useNavigate} from 'react-router-dom';
 import {Context} from '../../context';
@@ -7,17 +7,22 @@ const Header = () => {
     const [user,setUser] = useContext(Context);
     const navigate = useNavigate();
 
-    const allow = JSON.parse(localStorage.getItem('userGoogle'))
-    if (allow ) {
-        setUser(allow);
-        console.log(allow);
-    }
+    useEffect(()=> {
+        const allow = JSON.parse(localStorage.getItem('userGoogle'))
+        if (allow ) {
+            setUser(allow);
+            console.log(allow);
+        }
+    }, [setUser])
+    
    
-
-    const allowed = JSON.parse(localStorage.getItem('userInfo'));
-    if (allowed){
-        setUser(allowed);
-    }
+    useEffect(() => {
+        const allowed = JSON.parse(localStorage.getItem('userInfo'));
+        if (allowed){
+            setUser(allowed);
+        }
+    }, [setUser])
+    
     
     const handleLogout = () => {
         localStorage.removeItem("userInfo");

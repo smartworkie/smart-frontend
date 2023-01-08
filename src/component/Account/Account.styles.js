@@ -14,12 +14,16 @@ font-family: Times New Roman;
 }
 .form{
     background-color: #add8e6;
-    width: 40%;
+    width: 60%;
     border-radius: 5%;
     box-sizing: border-box;
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 10px;
+
+@media screen and (max-width:500px){
+    width: 70%;
+}
       }
 .underline{
     width: 4rem;
@@ -35,18 +39,23 @@ font-family: Times New Roman;
 background: #d4d4d4;
 border-radius: 20px;
 }
-li{
+li { 
     display:inline;
     padding: 10px;
 }
 .btn {
     background: transparent;
-    font-size: 20px;
-    margin: 20px 80px;
+    font-size: 20px; 
     color: orange;
     border-color: transparent;
     cursor: pointer;
     outline-color: hsl(210,36%,96%);
+   
+    @media screen and (max-width:500px){
+    margin-right: 1px;
+    margin-left: 10px;
+    padding-right: 5px;
+    }
 }
 
 .btn:hover{
@@ -57,7 +66,7 @@ li{
 
 #text {
     height: 100px;
-    width: 400px;
+    width: 90%;
    margin-top: 2px;
 }
 #task, #submit{
@@ -71,4 +80,10 @@ li{
         opacity: 0.7;
     }
    }
+   #image{
+    margin-left: 15%;
+   }
+.btnTask {
+margin-right: 20px;
+}
 `;

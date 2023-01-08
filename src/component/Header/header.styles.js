@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-background-color: #eee;
 margin: 0 auto;
 height: 50px;
 overflow: hidden;
 `;
 
 export const Content = styled.div`
+position: fixed;
+top: 0;
+background-color: #eee;
 display: flex;
 flex-direction: row;
 align-items: center;
+width: 100%;
 
 .image{
     width: 70px;
@@ -114,6 +117,12 @@ p {
             opacity: 0.7;
         }
     
+}
+@media screen and (max-width:500px){
+    #logout{
+    position: relative;
+    left:2%;
+    }
 }
 
 `;

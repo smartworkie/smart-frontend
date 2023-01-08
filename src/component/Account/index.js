@@ -70,8 +70,8 @@ return (
     <h2 id='dashboard'>Dashboard</h2>
     <div class = 'underline'></div>
     <ul class = 'btnHolder'>
-         <button class ='btn' onClick = {handleTask} id =  {task? 'active':''}><li className='btnTask'>Task</li></button>
-         <button class ='btn' onClick ={handleHistory} id = {!task?'active':''}><li>Transaction History</li></button>
+         <button className ='btn' onClick = {handleTask} id =  {task? 'active':''}><li className='btnTask'>Task</li></button>
+         <button className ='btn' onClick ={handleHistory} id = {!task?'active':''}><li>Transaction History</li></button>
          </ul>
     <p>{error}</p>
     
@@ -98,7 +98,7 @@ return (
     required
     onChange={handleChange}
     /><br/><br/>
-    <label for = 'text'>Additional Information: </label><br/>
+    <label htmlFor = 'text'>Additional Information: </label><br/>
     <input type = 'text' id = 'text' value = {text} onChange = {(e)=>setText(e.target.value)}/><br/><br/>
     <button
         type='submit'

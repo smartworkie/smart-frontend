@@ -23,6 +23,7 @@ export const Content = styled.div`
         font-size: 18px;
         border: none;
         cursor: pointer;
+        position: fixed;
         :hover{
             opacity: 0.6;
             background-color: white;
@@ -36,7 +37,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-  
+   
    @media screen and (max-width: 768px) {
        display: none;
        margin: 0 auto;
@@ -84,12 +85,14 @@ display: flex;
 flex-diretion: row;
 justify-content: center;
 
+
 @media screen  and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-left: 2px;
-    position: absolute;
+    position: fixed;
+    margin-top: 35px;
 }
 }
 
@@ -105,6 +108,7 @@ justify-content: center;
 #bar {
     display: none;
     @media screen and (max-width: 768px) {
+        position: fixed;
         display: block;
         height: 26px;
         width: 30px;

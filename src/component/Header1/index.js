@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import {Wrapper, Content} from './header1.styles';
 import {FaBars, FaAngleUp, FaAngleDown, FaWhatsapp} from 'react-icons/fa';
 import {AiOutlineClose, AiOutlineMail} from 'react-icons/ai';
@@ -11,25 +11,7 @@ const handleClick = () => setShowpage(!showpage);
 const handleInner = () => {
     setInner(!inner) 
 };
-useEffect(() => {
-  const closeDropdown = (e) => {
-    if (e.path[0].tagName !=='BUTTON') {
- setInner(false);
- 
-  }}
-  document.body.addEventListener('click', closeDropdown)
-  return () => document.body.removeEventListener('click', closeDropdown);
-}, [])
 
-useEffect(() => {
-  const closeDropdown = (e) => {
-    if (e.path[0].tagName !=='BUTTON') {
- setShowpage(false);
- 
-  }}
-  document.body.addEventListener('click', closeDropdown)
-  return () => document.body.removeEventListener('click', closeDropdown);
-}, [])
 
 return(
    <Wrapper>
