@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
 background-image:url(${smart});
 background-size: cover;
 height: 1000px;
-opacity:0.3;
+opacity:1;
 
 
 `;

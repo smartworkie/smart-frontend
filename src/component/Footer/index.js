@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
 //Styles
 import { Wrapper, Content } from './Footer.styles';
 import {Link} from 'react-router-dom';
+import {Context} from '../../context'
 
-const Footer = () => (
+const Footer = () => {
+    const [user] = useContext(Context)
+    return(
+
     <Wrapper>
         <Content>
             <section>
             <div><h5>GETTING STARTED</h5>
                 <Link to ='/'>  <p>Home</p> </Link>
-                  <Link to = '/signup'>  <p>Sign Up</p> </Link>
-                   <Link to ='/login'> <p>Log In</p> </Link>
+                  <Link to ={user? '/account': '/signup'}>  <p>Sign Up</p> </Link>
+                   <Link to ={user?'/account' : '/login'}> <p>Log In</p> </Link>
                 </div>
             <div><h5>OUR COMPANY</h5>
                  <Link to='/faq'> <p>F.A.Q.</p></Link>
@@ -24,6 +28,7 @@ const Footer = () => (
             
         </Content>
     </Wrapper>
-);
+)
+        };
 
 export default Footer;

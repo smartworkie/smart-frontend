@@ -69,7 +69,7 @@ a{
         }
     @media screen and (max-width: 390px){
         position: relative;
-        left: 60%;
+        left: 50%;
     }
         
 }
@@ -83,7 +83,11 @@ margin-left: -60px;
 .logged {
    position: relative;
    bottom: 14px;
-   margin-left: 50px;
+   margin-left: 20px;
+
+@media screen and (max-width:400px){
+    margin-left:10px;
+}
 }
 
 p {

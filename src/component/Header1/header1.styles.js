@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 background-color: white;
+overflow: hidden;
 height: 50px;
 @media screen and (max-width: 768px) {
     background-color: white;

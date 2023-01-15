@@ -60,7 +60,6 @@ try {
    setTimeout(() =>navigate('/payment'), 1000);
    } catch (error) {
     setError(error.response.data.message);
-    
 }
 }
 return (
@@ -76,7 +75,7 @@ return (
     <p>{error}</p>
     
     {success && <p> Uploaded Successfully!  </p>}
- {task &&  <form class ='form' onSubmit={handleSubmit}>
+ {task &&  <form className ='form' onSubmit={handleSubmit}>
     
   <label for = 'task'>Task to Perform</label><br/>
     <select name='task' id = 'task' placeholoder='Choose an Option'

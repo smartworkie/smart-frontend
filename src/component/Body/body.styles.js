@@ -5,6 +5,7 @@ background-color: blue;
 background-size: cover;
 height: 700px;
 margin: 0 auto;
+overflow: hidden;
 width: 95%;
 @media screen and (max-width: 768px){
     height: 500px;

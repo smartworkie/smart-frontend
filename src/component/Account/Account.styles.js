@@ -52,9 +52,8 @@ li {
     outline-color: hsl(210,36%,96%);
    
     @media screen and (max-width:500px){
-    margin-right: 1px;
-    margin-left: 10px;
-    padding-right: 5px;
+   
+    margin-left: 2px;
     }
 }
 
@@ -83,7 +82,4 @@ li {
    #image{
     margin-left: 15%;
    }
-.btnTask {
-margin-right: 20px;
-}
 `;
