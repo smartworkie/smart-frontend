@@ -15,6 +15,10 @@ flex-direction: row;
 align-items: center;
 width: 100%;
 
+@media screen and (max-width:490px){
+    cursor: none;
+}
+
 .image{
     width: 70px;
     height: 40px;

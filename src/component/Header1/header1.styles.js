@@ -11,6 +11,11 @@ height: 50px;
 `;
 
 export const Content = styled.div`
+
+@media screen and (max-width:490px){
+    cursor: none;
+}
+
     a{
         text-decoration: none;
         color: inherit;
