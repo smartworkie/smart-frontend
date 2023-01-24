@@ -22,11 +22,14 @@ section {
         color: inherit;
     }
 
-    @media screen and (max-width: 700px) {
-        width: 700px;
+    @media screen and (max-width: 1000px) {
         grid-template-columns: 200px 200px;
-        grid-gap: 35px;
-        margin-left: 40px;
+        grid-gap: 100px;
+        
+    }
+    @media screen and (max-width:530px) {
+        grid-template-columns:200px;
+        
     }
 }
 
@@ -43,9 +46,12 @@ div {
     border-radius: 20%;
     height: 350px;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 1000px){
         height: 300px;
        
+    }
+    @media screen and (max-width:530px){
+        height:200px;
     }
 
     : hover {
@@ -72,7 +78,7 @@ p{
 @media screen and (max-width: 400px) {
     section {
         grid-template-columns: 200px;
-        margin-left: 80px;
+         
     }
     div {
         height: 200px;

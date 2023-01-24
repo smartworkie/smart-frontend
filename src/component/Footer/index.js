@@ -24,7 +24,7 @@ const Footer = () => {
                 
             </div>
             </section>
-            <h5 className = 'copyright'>Copyright 2021. All Rights Reserved</h5>
+            <h5 className = 'copyright'>Copyright 2023. All Rights Reserved</h5>
             
         </Content>
     </Wrapper>

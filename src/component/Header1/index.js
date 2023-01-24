@@ -31,11 +31,11 @@ return(
        
      {!showpage && <div className = "intel">
     
-    <Link to = '/'>  <p  className ='padding'>Home</p></Link>
-     <Link to = '/about'> <p className ='padding'>About</p></Link>
-     <Link to = '/faq'> <p className ='padding'>F.A.Q</p></Link>
-    <Link to ='/sample'>  <p className ='padding'>Sample</p> </Link>
-    <Link to ='/support'>  <p className ='padding'>Support</p> </Link>
+      <p  className ='padding'><Link to = '/'>Home</Link></p>
+      <p className ='padding'><Link to = '/about'>About</Link></p>
+      <p className ='padding'><Link to = '/faq'>F.A.Q</Link></p>
+      <p className ='padding'><Link to ='/sample'>Sample</Link></p> 
+      <p className ='padding'><Link to ='/support'>Support</Link></p> 
       
    </div>
 }

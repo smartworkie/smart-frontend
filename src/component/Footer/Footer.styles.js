@@ -4,6 +4,8 @@ export const Wrapper = styled.div`
 background-color: grey;
 height: 180px;
 overflow: hidden;
+display:flex;
+justify-content:center;
 `;
 
 export const Content = styled.div`
@@ -16,18 +18,18 @@ section{
     display: grid;
     grid-template-columns: 200px 200px;
     grid-gap: 350px;
-    margin-left: 200px;
+    margin:0 auto;
+    text-align:center;
     
 
     @media screen and (max-width: 800px) {
         width: 300px;
         grid-template-columns: 120px 120px;
         grid-gap: 100px;
-        margin-left: 60px;
     }
 }
 .copyright {
-    margin-top: 6px;
+    margin-top: 20px;
    text-align: center;
      @media screen and (max-width: 800px) {
          text-align: center;}
@@ -48,7 +50,6 @@ p{
         section {
             grid-template-columns: 120px 120px;
             grid-gap: 50px;
-            margin-left: 30px;
             text-align: justify;
         }
         }

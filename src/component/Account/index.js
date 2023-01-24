@@ -108,7 +108,7 @@ return (
     </form>
 }
  {!task &&  <h2 className = 'form'>No Transaction History</h2>}
-       </Content>}
+</Content>}
        
 </Wrapper> 
 

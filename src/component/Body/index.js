@@ -18,30 +18,30 @@ return(
       <h5>Create Professional</h5>
       
          <section>
-         <Link to = {user? '/account':'/login'}>  <div>
+           <div><Link to = {user? '/account':'/login'}>
              <img src={Word} alt='word'/>
           <p id="fe">WORD DOCUMENTS</p>
-          </div></Link>
+          </Link>  </div>
   
-  <Link to = {user? '/account':'/login'}>  <div>
+    <div><Link to = {user? '/account':'/login'}>
      <img src={Pdf} alt='pdf' /> 
-    <p id="le"> PDF DOCUMENTS</p>
-    </div></Link>
+    <p id="le"> PDF DOCUMENTS</p></Link>
+    </div>
     
-    <Link to = {user? '/account':'/login'}> <div>
+    <div> <Link to = {user? '/account':'/login'}>
      <img src={Excel} alt= 'excel'/> 
-     <p id="se"> EXCEL DOCUMENTS</p> 
-     </div></Link>
+     <p id="se"> EXCEL DOCUMENTS</p> </Link>
+     </div>
     
-     <Link to = {user? '/account':'/login'}> <div>
+      <div><Link to = {user? '/account':'/login'}>
       <img src={Powerpoint} alt = 'powerpoint'/> 
       <p id="ne"> POWERPOINT PRESENTATION</p>
-      </div></Link>
+      </Link> </div>
      
-      <Link to = {user? '/account':'/login'}> <div>
+       <div><Link to = {user? '/account':'/login'}>
       <img src={fileConversion} alt = 'file'/>
       <p id="co">FILE CONVERSION</p> 
-      </div></Link>
+      </Link> </div>
       
       </section>
       </Content>

@@ -56,6 +56,7 @@ a{
     padding: 5px 5px;
     border-radius: 20%;
     position: relative;
+    background:white;
     left: 90%;
     top: -17px;
     
