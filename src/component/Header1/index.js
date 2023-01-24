@@ -1,16 +1,12 @@
 import React, { useState} from 'react';
 import {Wrapper, Content} from './header1.styles';
-import {FaBars, FaAngleUp, FaAngleDown, FaWhatsapp} from 'react-icons/fa';
-import {AiOutlineClose, AiOutlineMail} from 'react-icons/ai';
+import {FaBars} from 'react-icons/fa';
+import {AiOutlineClose} from 'react-icons/ai';
 import {Link} from 'react-router-dom';
 
 const Header1= () => {
 const [showpage, setShowpage] = useState(false);
-const [inner, setInner] = useState(false);
 const handleClick = () => setShowpage(!showpage);
-const handleInner = () => {
-    setInner(!inner) 
-};
 
 
 return(
@@ -29,10 +25,9 @@ return(
            <Link to = '/about'> <p className='padding'>About</p></Link>
            <Link to = '/faq'> <p className='padding'>F.A.Q</p></Link>
           <Link to ='/sample'>  <p className='padding'>Sample</p> </Link>
-          <p onClick = {handleInner} className ='padding'><button className = 'button'>Support{inner? <FaAngleUp/>:<FaAngleDown/>}</button></p>
+          <Link to ='/support'><p className='padding'>Support</p></Link>
           </div>)}
-     {inner && showpage && <><p  className = 'support'><FaWhatsapp/></p>
-       <p  className = 'support'> <AiOutlineMail/></p></>}
+    
        
      {!showpage && <div className = "intel">
     
@@ -40,10 +35,8 @@ return(
      <Link to = '/about'> <p className ='padding'>About</p></Link>
      <Link to = '/faq'> <p className ='padding'>F.A.Q</p></Link>
     <Link to ='/sample'>  <p className ='padding'>Sample</p> </Link>
-   
-       <p onClick = {handleInner} className ='padding'><button className = 'button'>Support{inner? <FaAngleUp/>:<FaAngleDown/>}</button></p>
-      {inner && <><p  className = 'support'><FaWhatsapp/></p>
-       <p  className = 'support'> <AiOutlineMail/></p></>}
+    <Link to ='/support'>  <p className ='padding'>Support</p> </Link>
+      
    </div>
 }
       

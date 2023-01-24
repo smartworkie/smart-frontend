@@ -3,7 +3,8 @@ import smart from '../../images/smart.jpg';
 export const Wrapper = styled.div`
 background-image:url(${smart});
 background-size: cover;
-height: 1000px;
+margin-top:50px;
+height:1000px;
 opacity:1;
 
 

@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 background-color: white;
-overflow: hidden;
-height: 50px;
+position:fixed;
+right:0;
+left:0;
 @media screen and (max-width: 768px) {
     background-color: white;
     height: 45px;
@@ -15,7 +16,6 @@ export const Content = styled.div`
 @media screen and (max-width:490px){
     cursor: none;
 }
-
     a{
         text-decoration: none;
         color: inherit;
@@ -41,14 +41,16 @@ export const Content = styled.div`
    }
  .intel {
     display: flex;
+   text-align:center;
     flex-direction: row;
     justify-content: center;
-   
+    margin-bottom:1px;
+    align-items:center;
+    
+    
    @media screen and (max-width: 768px) {
        display: none;
-       margin: 0 auto;
-       position: relative;
-       top: -20px;
+      
        }
 }
 
@@ -90,6 +92,7 @@ export const Content = styled.div`
 display: flex;
 flex-diretion: row;
 justify-content: center;
+
 
 
 @media screen  and (max-width: 768px) {

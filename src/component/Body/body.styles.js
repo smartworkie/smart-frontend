@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper=styled.div`
-background-color: blue;
+background-color: #2785c4d8;
 background-size: cover;
 height: 700px;
 margin: 0 auto;
+margin-top:40px;
 overflow: hidden;
 width: 95%;
 @media screen and (max-width: 768px){

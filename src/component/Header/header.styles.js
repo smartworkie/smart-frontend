@@ -15,7 +15,7 @@ flex-direction: row;
 align-items: center;
 width: 100%;
 
-@media screen and (max-width:490px){
+@media screen and (max-width:768px){
     cursor: none;
 }
 
@@ -62,36 +62,54 @@ a{
     :hover{
     opacity: 0.6;
     background-color: white;
+    color:black;
+
     }
     @media screen and (max-width:1100px) {
         position: relative;
-        left: 90%;
-        }
+        left: 40vw;
+         }
+    @media screen and (max-width:990px){
+        left:50%;
+    }
+    @media screen and (max-width:875px){
+        left:30%
+    }
+    @media screen and (max-width:768px){
+        left:40%;
+    }
+    @media screen and (max-width:576px) {
+        left:15%;
+    }
+    @media screen and (max-width:480px){
+        left:30%;
+    }
+    @media screen and (max-width:410px){
+        left:20%;
+    }
         @media screen and (max-width: 400px){
 
-        left: 70%;
+        left: 10%;
         }
     @media screen and (max-width: 390px){
-        position: relative;
-        left: 50%;
+       
+        left: 9%;
+    }
+    @media screen and (max-width:350px) {
+        left:5%;
     }
         
 }
-#signup {
-    @media screen and (max-width:650px){
-margin-left: -60px;
-    }
+
 
 }
  
 .logged {
    position: relative;
    bottom: 14px;
-   margin-left: 20px;
+  left:0;
+  right:0;
 
-@media screen and (max-width:400px){
-    margin-left:10px;
-}
 }
 
 p {
@@ -100,20 +118,21 @@ p {
     display: inline;
     position: relative;
     top: 10px;
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 768px){
         font-size: 14px;
     }
     : hover {
         opacity: 0.7;
     }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
    
     #login, #signup, #logout {
-        border: 2px solid white;
+        border: 2px solid #FF2312;
         padding: 1px 1px;
         border-radius: 20%;
-        margin-left: 7px;
+        background-color: #FF2312 ;
+        color:white;
 }  
     p {
         font-size: 14px;
@@ -126,11 +145,6 @@ p {
         }
     
 }
-@media screen and (max-width:500px){
-    #logout{
-    position: relative;
-    left:2%;
-    }
-}
+
 
 `;

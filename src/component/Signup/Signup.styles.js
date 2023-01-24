@@ -15,7 +15,7 @@ height: 630px;
 background-color: #add8e6;
 border-radius: 5%;
 margin: 0 auto;
-margin-bottom: 20px;
+margin-bottom: 90px;
 overflow: hidden;
 @media screen and (max-width: 500px) {
     width: 300px;
