@@ -68,19 +68,24 @@ li {
     height: 100px;
     width: 90%;
    margin-top: 2px;
+   border:1px solid transparent;
+   outline:none;
 }
 #task, #submit{
     border-radius: 5%;
     border: none;
     width: 200px;
     height: 30px;
-    background-color: grey;
+    background-color: #FCA61F;
     cursor: pointer;
+    color:white;
+    outline:none;
     :hover{
         opacity: 0.7;
     }
    }
    #image{
     margin-left: 15%;
+  
    }
 `;

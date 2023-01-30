@@ -31,6 +31,9 @@ section {
         grid-template-columns:200px;
         
     }
+    @media sceen and (max-width:400px){
+       
+    }
 }
 
 img {
@@ -52,6 +55,7 @@ div {
     }
     @media screen and (max-width:530px){
         height:200px;
+        margin-bottom:-30px;
     }
 
     : hover {
@@ -99,5 +103,10 @@ p{
         position: relative;
         bottom: 20px;
     }
+}
+.last{
+@media screen and (max-width:530px){
+    margin-bottom:20px;
+}
 }
 `;

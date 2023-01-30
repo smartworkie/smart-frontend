@@ -18,30 +18,30 @@ return (
 <Wrapper>
     <Content>
         <section>
-          <Link  to ={user?'/account':'/login'}> <div>
+           <div><Link  to ={user?'/account':'/login'}>
                 <h5> Step One</h5>
                 <p>Create Your Account</p>
                 <br/><br/><br/>
                 <img id = 'account' src={Account} alt='prop'/>
 
-            </div></Link>
-         <Link to={user?'/account':'/login'} > <div>
+                </Link></div>
+          <div><Link to={user?'/account':'/login'} >
                 <h5>Step Two</h5>
                 <p> Upload Materials to Work With in Format of Your Choice (images, word, pdf, ppt or xsl) </p>
                 <img src = {Upload} alt=''/>
-            </div></Link>
-           <Link to={user?'/account':'/login'}> <div>
+                </Link> </div>
+            <div><Link to={user?'/account':'/login'}>
                 <h5>Step Three</h5>
                 <p>Payment for Services </p> 
                 <br/><br/><br/>
                 <img id = 'enlarge' src = {Paystack} alt='enlarge'/>
-            </div></Link>
-          <Link to={user?'/account':'/login'}>  <div>
+                </Link> </div>
+            <div className='last'><Link to={user?'/account':'/login'}>
                 <h5>Step Four</h5>
                 <p>Download Professional Documents in Format of Your Choice</p>
                 <br/>
                 <img id = 'download' src = {Download} alt='download'/>
-            </div></Link>
+                </Link>    </div>
         </section>
     </Content>
 </Wrapper>

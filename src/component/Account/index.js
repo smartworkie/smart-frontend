@@ -87,8 +87,8 @@ return (
     <option >Create PowerPoint Presentation</option>
     <option >Convert Files</option>
     </select>
-
-    <p>Upload Materials to Work With (images, word, pdf, ppt or xsl)</p>
+        <br/><br/>
+    <p>Upload Materials to Work With </p>
     <input 
     multiple
     type= 'file'
@@ -96,9 +96,11 @@ return (
     id='image'
     required
     onChange={handleChange}
-    /><br/><br/>
+    />
+   <p style={{fontSize:12}}> (images, word, pdf, ppt or xsl)</p>
+    <br/><br/>
     <label htmlFor = 'text'>Additional Information: </label><br/>
-    <input type = 'text' id = 'text' value = {text} onChange = {(e)=>setText(e.target.value)}/><br/><br/>
+    <input type = 'text' id = 'text'  value = {text} onChange = {(e)=>setText(e.target.value)}/><br/><br/>
     <button
         type='submit'
         name='submit'

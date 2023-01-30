@@ -68,6 +68,7 @@ input{
     margin-bottom: 20px;
     height: 30px;
     width:  200px;
+    outline:none;
     border: 0;
     border-radius: 5px;
     .para{position: relative
@@ -80,6 +81,7 @@ input{
     border: none;
     width: 200px;
     height: 30px;
+    color:white
     background-color: blue;
     cursor: pointer;
     :hover{

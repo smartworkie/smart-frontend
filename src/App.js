@@ -19,6 +19,7 @@ import About from './component/About';
 import Privacy from './component/Privacy';
 import Payment from './component/Payment';
 import Sample from './component/Sample';
+import Support from './component/Support';
 import {UserProvider} from './context';
 
  const App = () => {
@@ -44,6 +45,7 @@ import {UserProvider} from './context';
   <Route path='/payment' element = {<Payment/>}/>
   <Route path='/privacy' element ={<Privacy/>}/>
   <Route path='/sample' element = {<Sample/>}/>
+  <Route path='/support' element = {<Support/>}/>
   </Routes>
    <Footer/>
    </UserProvider>
