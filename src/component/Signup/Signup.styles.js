@@ -16,6 +16,7 @@ background-color: #add8e6;
 border-radius: 5%;
 margin: 0 auto;
 margin-top: 50px;
+margin-bottom:20px;
 overflow: hidden;
 @media screen and (max-width: 500px) {
     width: 300px;
@@ -68,6 +69,7 @@ input{
     margin-bottom: 20px;
     height: 30px;
     width:  200px;
+    outline:none;
     border: 0;
     border-radius: 5px;
    }

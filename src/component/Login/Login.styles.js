@@ -81,7 +81,7 @@ input{
     border: none;
     width: 200px;
     height: 30px;
-    color:white
+    color:white;
     background-color: blue;
     cursor: pointer;
     :hover{
