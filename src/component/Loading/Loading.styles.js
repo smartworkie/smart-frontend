@@ -17,4 +17,5 @@ margin: 20px auto;
         transform:rotate(360deg);
     }
 }
+
 `;

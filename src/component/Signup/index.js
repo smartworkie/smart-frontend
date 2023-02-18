@@ -107,7 +107,7 @@ const Signup= () => {
     <div>
         
             <p>Enter Your Email</p>
-        <input type = 'text'
+        <input type = 'email'
         name='email'
         id = 'email'
         placeholder='Your Email address'
