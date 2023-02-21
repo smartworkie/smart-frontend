@@ -33,6 +33,7 @@ h1{
 
 }
 
+
 #message{
     height:70px;
     align-content: flex-start;
@@ -50,6 +51,10 @@ h1{
     border:none;
     
 }
+#message1{
+    color:rgba(0, 0, 255, 0.753);
+}
+
 .submit:hover{
     background:blue;
 }
