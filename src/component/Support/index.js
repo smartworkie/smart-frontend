@@ -11,7 +11,7 @@ const Support = () => {
     const sendEmail = (e) => {
       e.preventDefault();
         setLoading(true);
-      emailjs.sendForm(process.env.REACT_APP_SERVICE||REACT_APP_PUBLIC_KEY, process.env.REACT_APP_TEMPLATE||REACT_APP_TEMPLATE, form.current, process.env.REACT_APP_PUBLIC_KEY ||REACT_APP_PUBLIC_KEY)
+      emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, form.current, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
             setContact(true);
@@ -21,6 +21,7 @@ const Support = () => {
            setError(true);
            setLoading(false);
         });
+        console.log(process.env.REACT_APP_PUBLIC_KEY)
     }
     return(
         <form onSubmit={sendEmail} ref={form}>
