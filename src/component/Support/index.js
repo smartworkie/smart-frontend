@@ -34,9 +34,9 @@ const Support = () => {
                 {contact && <p id="message1">Message Received!</p>}
                 {error && <p id="message1">Error! Try Again or Check Your Connection</p>}
             <div className='boxes'>
-                <input type='text' id = 'name' name='user_name' placeholder='Name'/>
-                <input type='text' id = 'email' name='user_email' placeholder='Email'/>
-                <input type='text' id='message' name = 'message' placeholder='Message'></input>
+                <input type='text' id = 'name' name='user_name' placeholder='Name' required />
+                <input type='text' id = 'email' name='user_email' placeholder='Email' required/>
+                <input type='text' id='message' name = 'message' placeholder='Message' required></input>
                 <button className='submit'>Submit</button>
           </div>
         </Content>
