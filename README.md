@@ -1,4 +1,5 @@
 # smart-frontend
+Live Website: https://verifiedsmart.netlify.app/
 
 A responsive React application with secure authentication, Google Sign-In, password reset, FAQ, and support features.
 
